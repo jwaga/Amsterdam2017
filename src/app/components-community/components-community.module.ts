@@ -5,10 +5,17 @@ import { ComponentsCommunityRoutingModule } from "./components-community-routing
 
 import { ComponentsCommunityMainComponent } from './components-community-main.component';
 
+import { ColorPickerModule } from 'ngx-color-picker';
+import { Ng2CompleterModule } from "ng2-completer";
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
 @NgModule({
   imports: [
     SharedModule,
-    ComponentsCommunityRoutingModule
+    ComponentsCommunityRoutingModule,
+    ColorPickerModule,
+    Ng2CompleterModule,
+    PdfViewerModule
   ],
   declarations: [
     ComponentsCommunityMainComponent
