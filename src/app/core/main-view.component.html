@@ -1,11 +1,25 @@
-<!-- TODO: make it look like in https://www.barbarianmeetscoding.com/blog/2017/02/08/building-beautiful-web-apps-with-angular-material-part-ii/ -->
-<mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile><a [routerLink]="['./overview']">Angular Overview</a></mat-grid-tile>
-  <mat-grid-tile><a [routerLink]="['./cool-dev']">How Cool Is To Dev Here</a></mat-grid-tile>
-  <mat-grid-tile><a [routerLink]="['./architecture']">Architecture Explained</a></mat-grid-tile>
-  <mat-grid-tile><a [routerLink]="['./modules-builds']">Modules and Builds</a></mat-grid-tile>
-  <mat-grid-tile><a [routerLink]="['./forms-validation']">Forms and Validation</a></mat-grid-tile>
-  <mat-grid-tile><a [routerLink]="['./routing-explained']">Routing Explained</a></mat-grid-tile>
-  <mat-grid-tile><a [routerLink]="['./components-community']">Components and Community</a></mat-grid-tile>
-  <mat-grid-tile>Summing Up</mat-grid-tile>
+<section class="app-main-view">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>
+      <a [routerLink]="['./overview']"><h1>Angular Overview</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a [routerLink]="['./cool-dev']"><h1>How Cool Is To Dev Here</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a [routerLink]="['./architecture']"><h1>Architecture Explained</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a [routerLink]="['./modules-builds']"><h1>Modules and Builds</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a [routerLink]="['./forms-validation']"><h1>Forms and Validation</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a [routerLink]="['./routing-explained']"><h1>Routing Explained</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a [routerLink]="['./components-community']"><h1>Components and Community</h1></a>
+    </mat-grid-tile>
+    <mat-grid-tile><h1>Summing Up</h1></mat-grid-tile>
 </mat-grid-list>

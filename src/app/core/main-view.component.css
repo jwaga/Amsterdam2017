@@ -1,3 +1,7 @@
 mat-grid-tile {
-    background: lightblue;
+    background: #9fa8da;
+}
+
+.app-main-view {
+    height: 100vh;
 }
