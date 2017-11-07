@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { ColorPickerModule } from 'ngx-color-picker';
+
 import { MatGridListModule } from '@angular/material';
 import { MatChipsModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
@@ -9,12 +11,14 @@ import { MatToolbarModule } from '@angular/material';
   imports: [
     MatGridListModule,
     MatChipsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ColorPickerModule
   ],
   exports: [
     MatGridListModule,
     MatChipsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    ColorPickerModule
   ]
 })
 export class MaterialDesignWrapperModule { } 
