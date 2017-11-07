@@ -4,17 +4,20 @@ import { CommonModule } from '@angular/common';
 import { MatGridListModule } from '@angular/material';
 import { MatChipsModule } from '@angular/material';
 import { MatToolbarModule } from '@angular/material';
+import { MatTooltipModule } from '@angular/material';
 
 @NgModule({
   imports: [
     MatGridListModule,
     MatChipsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTooltipModule
   ],
   exports: [
     MatGridListModule,
     MatChipsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTooltipModule
   ]
 })
 export class MaterialDesignWrapperModule { } 
