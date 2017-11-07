@@ -2,14 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatGridListModule } from '@angular/material';
-
+import { MatChipsModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
 
 @NgModule({
+  imports: [
+    MatGridListModule,
+    MatChipsModule,
+    MatToolbarModule
+  ],
   exports: [
-    MatGridListModule
+    MatGridListModule,
+    MatChipsModule,
+    MatToolbarModule
   ]
 })
-class MaterialDesignWrapperModule { } 
+export class MaterialDesignWrapperModule { } 
 
 @NgModule({
   imports: [
