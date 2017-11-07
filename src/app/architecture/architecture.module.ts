@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { SharedModule } from '../shared/shared.module';
+import { ArchitectureRoutingModule } from "./architecture-routing.module";
+
+import { ArchitectureMainComponent } from './architecture-main.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    ArchitectureRoutingModule
   ],
-  declarations: []
+  declarations: [
+    ArchitectureMainComponent
+  ]
 })
 export class ArchitectureModule { }

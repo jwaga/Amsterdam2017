@@ -7,8 +7,35 @@ const routes: Routes = [
     {
         path: '',
         component: MainViewComponent
+    },
+    {
+        path: 'overview',
+        loadChildren: './overview/overview.module#OverviewModule'
+    },
+    {
+        path: 'cool-dev',
+        loadChildren: './cool-dev/cool-dev.module#CoolDevModule'
+    },
+    {
+        path: 'architecture',
+        loadChildren: './architecture/architecture.module#ArchitectureModule'
+    },
+    {
+        path: 'modules-builds',
+        loadChildren: './modules-builds/modules-builds.module#ModulesBuildsModule'
+    },
+    {
+        path: 'forms-validation',
+        loadChildren: './forms-validation/forms-validation.module#FormsValidationModule'
+    },
+    {
+        path: 'routing-explained',
+        loadChildren: './routing-explained/routing-explained.module#RoutingExplainedModule'
+    },
+    {
+        path: 'components-community',
+        loadChildren: './components-community/components-community.module#ComponentsCommunityModule'
     }
-    // TODO: Lazy load the feature modules
 ];
 
 @NgModule({

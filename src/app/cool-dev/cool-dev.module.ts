@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { SharedModule } from '../shared/shared.module'
+import { CoolDevRoutingModule } from "./cool-dev-routing.module";
+
+import { CoolDevMainComponent } from './cool-dev-main.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    CoolDevRoutingModule
   ],
-  declarations: []
+  declarations: [
+    CoolDevMainComponent
+  ]
 })
 export class CoolDevModule { }

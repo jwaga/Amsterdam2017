@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
+import { SharedModule } from '../shared/shared.module'
+import { OverviewRoutingModule } from "./overview-routing.module";
+
+import { OverviewMainComponent } from './overview-main.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    SharedModule,
+    OverviewRoutingModule
   ],
-  declarations: []
+  declarations: [
+    OverviewMainComponent
+  ]
 })
 export class OverviewModule { }

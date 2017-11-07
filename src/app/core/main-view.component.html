@@ -1,12 +1,11 @@
-<!-- TODO: Sidenav -->
-<!-- TODO: tooltips with desc, header/footer? font sizes, rowHeigth=fit? / perfect scrollbar --> 
+<!-- TODO: make it look like in https://www.barbarianmeetscoding.com/blog/2017/02/08/building-beautiful-web-apps-with-angular-material-part-ii/ -->
 <mat-grid-list cols="2" rowHeight="2:1">
-  <mat-grid-tile>Angular Overview</mat-grid-tile> 
-  <mat-grid-tile>How Cool Is To Dev Here</mat-grid-tile>
-  <mat-grid-tile>Architecture Explained</mat-grid-tile>
-  <mat-grid-tile>Modules and Builds</mat-grid-tile>
-  <mat-grid-tile>Forms and Validation</mat-grid-tile>
-  <mat-grid-tile>Routing Explained</mat-grid-tile>
-  <mat-grid-tile>Components and Community</mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./overview']">Angular Overview</a></mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./cool-dev']">How Cool Is To Dev Here</a></mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./architecture']">Architecture Explained</a></mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./modules-builds']">Modules and Builds</a></mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./forms-validation']">Forms and Validation</a></mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./routing-explained']">Routing Explained</a></mat-grid-tile>
+  <mat-grid-tile><a [routerLink]="['./components-community']">Components and Community</a></mat-grid-tile>
   <mat-grid-tile>Summing Up</mat-grid-tile>
 </mat-grid-list>
