@@ -21,7 +21,7 @@ export class ComponentsCommunityMainComponent implements OnInit {
     { country: 'Poland', value: 'Poland' },
     { country: 'United States', value: 'United States' }
   ];
-  protected captains = ['James T. Kirk', 'Benjamin Sisko', 'Jean-Luc Picard', 'Spock', 'Jonathan Archer', 'Hikaru Sulu', 'Christopher Pike', 'Rachel Garrett' ];
+
   protected pdfSrc = 'https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf';
 
   constructor(private completerService: CompleterService) {

@@ -17,24 +17,8 @@
       <h3>
         Autocomplete
       </h3>
-      <mat-grid-list cols="2" rowHeight="60px">
-          <mat-grid-tile style="overflow: visible;">
-              <div class="label">Search country</div>
-              <div>
-                <ng2-completer [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
-              </div>
-              <div>
-                {{searchStr}}
-              </div>        
-          </mat-grid-tile>
-          <mat-grid-tile style="overflow: visible;">
-              <div class="label">Search captain</div>
-              <ng2-completer [(ngModel)]="captain" [datasource]="captains" [minSearchLength]="0"></ng2-completer>
-              <div>
-                {{captain}}
-              </div>
-          </mat-grid-tile>
-      </mat-grid-list>
+      <span class="label">Search country</span>
+      <ng2-completer [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
   </div>
   <hr>
   <div class="subsection">
