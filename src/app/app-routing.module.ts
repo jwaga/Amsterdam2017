@@ -35,6 +35,10 @@ const routes: Routes = [
     {
         path: 'components-community',
         loadChildren: './components-community/components-community.module#ComponentsCommunityModule'
+    },
+    {
+        path: '**',
+        component: MainViewComponent
     }
 ];
 
