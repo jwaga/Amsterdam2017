@@ -1,0 +1,13 @@
+section {
+    padding: 50px
+}
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.example-container > * {
+    width: 400px;
+}
+  
