@@ -1,7 +1,13 @@
-mat-grid-tile {
-    background: #9fa8da;
+section {
+    height: 100vh;
 }
 
-.app-main-view {
-    height: 100vh;
+mat-grid-tile {
+    color: white;
+    background: #3f51b5;
+}
+
+a, a:hover, a:active, a:visited { 
+    color: white; 
+    text-decoration: none;
 }
