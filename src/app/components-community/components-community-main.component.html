@@ -2,9 +2,38 @@
   <span>Components and Community</span>
 </mat-toolbar>
 <section class="m-1">
-  <a href="https://github.com/brillout/awesome-angular-components" target="_blank">Awesome components</a>
-
-  <div>
-    Choose one color: <input [(colorPicker)]="color" [style.background]="color"/>
+  <div class="subsection">
+      <a href="https://github.com/brillout/awesome-angular-components" target="_blank">Awesome components</a>
+  </div>
+  <hr>
+  <div class="subsection">
+    <h3>
+      Color picker
+    </h3>
+    <span class="label">Choose one color:</span><input [(ngModel)]="mycolor" [(colorPicker)]="color" [style.background]="color"/>
+  </div>
+  <hr>
+  <div class="subsection">
+      <h3>
+        Autocomplete
+      </h3>
+      <mat-grid-list cols="2" rowHeight="60px">
+          <mat-grid-tile style="overflow: visible;">
+              <div class="label">Search country</div>
+              <div>
+                <ng2-completer [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
+              </div>
+              <div>
+                {{searchStr}}
+              </div>        
+          </mat-grid-tile>
+          <mat-grid-tile style="overflow: visible;">
+              <div class="label">Search captain</div>
+              <ng2-completer [(ngModel)]="captain" [datasource]="captains" [minSearchLength]="0"></ng2-completer>
+              <div>
+                {{captain}}
+              </div>
+          </mat-grid-tile>
+      </mat-grid-list>
   </div>
 </section>
