@@ -1,0 +1,7 @@
+section {
+    padding: 50px
+}
+
+mat-chip {
+    max-width: 400px;
+}

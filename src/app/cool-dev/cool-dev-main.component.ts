@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatChipSelectionChange } from "@angular/material";
 
 @Component({
   selector: 'app-cool-dev-main',
@@ -10,6 +11,10 @@ export class CoolDevMainComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onClick(e: Event) {
+    console.log("debugging...");
   }
 
 }

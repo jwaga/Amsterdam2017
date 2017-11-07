@@ -3,8 +3,8 @@
 </mat-toolbar>
 <section>
   <mat-chip-list class="mat-chip-list-stacked">
-    <mat-chip color="primary" selected="true">Typescript is Your Friend!</mat-chip>
-    <mat-chip color="accent" selected="true">A Fast Dev Cycle</mat-chip>
-    <mat-chip>Debugging and Other Tools</mat-chip>
+    <mat-chip color="primary" selected="true" matTooltip="Show me!" matTooltipPosition="right">Typescript is Your Friend!</mat-chip>
+    <mat-chip color="accent" selected="true" matTooltip="Change me!" matTooltipPosition="right">A Fast Dev Cycle</mat-chip>
+    <mat-chip matTooltip="Click me!" matTooltipPosition="right" (click)="onClick($event)">Debugging and Other Tools</mat-chip>
   </mat-chip-list>
 </section>

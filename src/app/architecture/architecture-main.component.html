@@ -1,3 +1,7 @@
 <mat-toolbar color="primary">
   <span>Architecture Explained</span>
 </mat-toolbar>
+<section>
+  <img src="../../assets/architecture-overview.png">
+  <div><span>I'm a patient model </span>{{ model | json }}<span> fetched by a patient service on </span>{{ modelDate | date:'HH:mm:ss' }}</div>
+</section>
