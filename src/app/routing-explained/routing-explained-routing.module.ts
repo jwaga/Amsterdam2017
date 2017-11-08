@@ -21,6 +21,10 @@ const routes: Routes = [
             component: RouteBComponent
         },
         {
+            path: 'routeC',
+            component: RouteCComponent
+        },
+        {
             path: 'routeC/:id',
             component: RouteCComponent
         }]
