@@ -9,6 +9,8 @@ import { MatTooltipModule } from '@angular/material';
 import { MatInputModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material';
 import { MatSelectModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material';
+import { MatSlideToggleModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -19,7 +21,9 @@ import { MatSelectModule } from '@angular/material';
     MatTooltipModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule,
+    MatSlideToggleModule
   ],
   exports: [
     FormsModule,
@@ -29,7 +33,9 @@ import { MatSelectModule } from '@angular/material';
     MatTooltipModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule,
+    MatSlideToggleModule
   ]
 })
 export class MaterialDesignWrapperModule { } 

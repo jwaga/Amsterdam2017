@@ -2,6 +2,15 @@ section {
     padding: 50px
 }
 
+mat-form-field {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 40px;
+    max-width: 50px;
+}
+
 .example-container {
     display: flex;
     flex-direction: column;
