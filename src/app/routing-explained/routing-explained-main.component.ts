@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 
 @Component({
   selector: 'app-routing-explained-main',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoutingExplainedMainComponent implements OnInit {
 
-  constructor() { }
+  protected id: string;
+
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute
+  ) { }
 
   ngOnInit() {
   }
 
+  goTo() {
+    this.router.navigate(['routeC/' + this.id], {relativeTo: this.activatedRoute});
+  }
 }

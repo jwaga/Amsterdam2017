@@ -1,3 +1,23 @@
 <mat-toolbar color="primary">
   <span>Routing Explained</span>
 </mat-toolbar>
+<section class="m-1">
+  <h2> - Easy to define</h2>
+  <h2> - Routes help load modules on demand</h2>
+  <h2> - Protected routes with Guards</h2>
+  <h2> - Easy to work with params</h2>
+
+  <hr>
+
+  <h1>Example</h1>
+  <nav>
+    <a routerLink="./routeA" routerLinkActive="active">RouteA</a>
+    <a routerLink="./routeB" routerLinkActive="active">RouteB</a>
+    <input type="text" [(ngModel)]="id" placeholder="Write something"/><button (click)="goTo()"> Go!</button>
+  </nav>
+  <mat-grid-list cols="1" rowHeight="4:1">
+      <mat-grid-tile>
+          <router-outlet></router-outlet>
+      </mat-grid-tile>
+  </mat-grid-list>
+</section>
